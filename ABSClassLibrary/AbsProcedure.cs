@@ -110,9 +110,9 @@ namespace ABSClassLibrary
             handler?.Invoke(this, e);
         }
 
-        internal void LoadData()
+        internal void LoadProcedureData()
         {
-            DataLoader.LoadData(Name);
+            DataLoader.LoadProcedureData(Name);
         }
         internal void GetMainParametrs()
         {

@@ -7,12 +7,12 @@ namespace ABSClassLibrary
 {
     internal interface IProcedureDataLoader
     {
-        Dictionary<string, object> LoadData(string ProcName);
+        Dictionary<string, object> LoadProcedureData(string ProcName);
     }
 
     internal class FooDataLoader : IProcedureDataLoader
     {
-        public Dictionary<string, object> LoadData(string ProcName)
+        public Dictionary<string, object> LoadProcedureData(string ProcName)
         {
             throw new NotImplementedException();
         }

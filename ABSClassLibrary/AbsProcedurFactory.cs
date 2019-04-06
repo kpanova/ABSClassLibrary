@@ -24,7 +24,7 @@ namespace ABSClassLibrary
             IHasProcedureError procedureError = new FooHasProcedureError();
             IRequestDataLoader requestDataLoader = new FooRequestDataLoader();
             AbsProcedure absProcedure = new FooAbsProcedure(AbsProcedurName, dataLoader, parametrsGetter, procedureError, requestDataLoader);
-            absProcedure.LoadData();
+            absProcedure.LoadProcedureData();
             absProcedure.LoadRequestData();
             return absProcedure;
         }
