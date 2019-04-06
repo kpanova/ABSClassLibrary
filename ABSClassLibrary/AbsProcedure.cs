@@ -7,7 +7,7 @@ namespace ABSClassLibrary
 {
     internal abstract class AbsProcedure
     {
-        public event EventHandler StateChanged;
+        public event EventHandler StateChanged; // For Logging Changed State
         internal string Name
         {
             get => default(string);

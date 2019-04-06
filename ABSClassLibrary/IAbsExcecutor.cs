@@ -23,7 +23,7 @@ namespace ABSClassLibrary
 
         static void c_StateChanged(object sender, EventArgs e)
         {
-            Console.WriteLine("The threshold was reached.");
+            Console.WriteLine("The current State Changed.");
             Environment.Exit(0);
         }
     }
