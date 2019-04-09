@@ -8,7 +8,7 @@ namespace ABSClassLibrary
     abstract internal class AbsProcedurFactory
     {
         abstract internal AbsProcedure CreateAbsProcedure(string AbsProcedurName);
-        Dictionary<string, AbsProcedure> ProcedurFactory = new Dictionary<string, AbsProcedure>
+        internal static Dictionary<string, AbsProcedure> ProcedurFactory = new Dictionary<string, AbsProcedure>
         {
             {"FooAbsProcedure", new FooAbsProcedureFactory().CreateAbsProcedure("FooAbsProcedure") }
         };

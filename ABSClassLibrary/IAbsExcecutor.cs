@@ -7,14 +7,15 @@ namespace ABSClassLibrary
 {
     internal interface IAbsExcecutor
     {
-        void Excecut(AbsProcedure absProcedure);
+        void Excecut(string absProcedureName);
     }
 
     internal class AbsProcedureExcecutor : IAbsExcecutor
     {
-        public void Excecut(AbsProcedure absProcedure)
+        public void Excecut(string absProcedureName)
         {
             /*Any Code For Excecuting*/
+            var absProcedure = AbsProcedurFactory.ProcedurFactory(absProcedureName);
             absProcedure.GetProcedureError();
             absProcedure.GetMainParametrs();
             absProcedure.StateChanged += c_StateChanged;
