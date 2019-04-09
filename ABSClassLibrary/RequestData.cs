@@ -9,7 +9,7 @@ namespace ABSClassLibrary
     {
 
     }
-    internal class FooRequestData
+    internal class FooRequestData : RequestData
     {
 
     }
